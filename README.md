@@ -2,17 +2,17 @@
 
 A fully-connected neural network implemented from scratch using only NumPy, achieving **94.25% test accuracy** on MNIST digit classification.
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project implements a complete neural network from first principles without using any deep learning frameworks (no TensorFlow, PyTorch, or Keras). All components including forward propagation, backpropagation, and optimization are manually implemented and mathematically verified.
 
 ### Key Achievements
-- ✅ **94.25% test accuracy** on MNIST
-- ✅ All gradients verified with numerical gradient checking
-- ✅ Complete from-scratch implementation using only NumPy
-- ✅ Comprehensive documentation and analysis
+-  **94.25% test accuracy** on MNIST
+-  All gradients verified with numerical gradient checking
+-  Complete from-scratch implementation using only NumPy
+-  Comprehensive documentation and analysis
 
-## 📊 Results Summary
+##  Results Summary
 
 | Metric | Value |
 |--------|-------|
@@ -23,7 +23,7 @@ This project implements a complete neural network from first principles without 
 | **Best Per-Digit** | 98.1% (Digit 1) |
 | **Worst Per-Digit** | 91.2% (Digit 6) |
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Input (784) → Dense (1024, ReLU) → Output (10, Softmax)
@@ -50,7 +50,7 @@ Input (784) → Dense (1024, ReLU) → Output (10, Softmax)
 | LR Decay | At epochs 30, 50, 65 |
 | Gradient Clipping | [-5, 5] |
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 mnist_neural_network_project/
@@ -69,7 +69,7 @@ mnist_neural_network_project/
 └── README.md            # This file
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone Repository
 ```bash
@@ -101,7 +101,7 @@ Training outputs will be saved to `results/`:
 - `confusion_matrix.png` - Classification errors
 - `sample_predictions.png` - Example predictions
 
-## 📚 Implementation Details
+##  Implementation Details
 
 ### Core Components
 
@@ -128,9 +128,9 @@ All gradients verified with numerical gradient checking:
 numerical_grad = (loss(w + eps) - loss(w - eps)) / (2 * eps)
 relative_error = |analytical - numerical| / (|analytical| + |numerical|)
 ```
-All relative errors < 1e-7 ✅
+All relative errors < 1e-7 
 
-## 📈 Training History
+##  Training History
 
 The model was trained through 6 iterations to reach 94.25%:
 
@@ -149,7 +149,7 @@ The model was trained through 6 iterations to reach 94.25%:
 - Momentum helps convergence significantly
 - 1024 units provided sufficient capacity
 
-## 🎨 Visualizations
+##  Visualizations
 
 The project generates several visualizations:
 
@@ -159,7 +159,7 @@ The project generates several visualizations:
 4. **Per-Digit Accuracy**: Performance breakdown by digit
 5. **Performance Timeline**: All iterations compared
 
-## 🔬 Technical Highlights
+##  Technical Highlights
 
 ### Challenges Overcome
 
@@ -186,7 +186,7 @@ The project generates several visualizations:
 - **Momentum**: Accelerates convergence
 - **Weight Decay**: L2 regularization prevents overfitting
 
-## 🔮 Future Work
+##  Future Work
 
 Several extensions were prototyped but not fully implemented due to time constraints:
 
@@ -210,7 +210,7 @@ See documentation for detailed implementation plans.
 | Best FC Network (literature) | ~96-97% |
 | CNNs (state-of-art) | >99% |
 
-## 🧪 Running Tests
+##  Running Tests
 
 Test gradient checking:
 ```bash
@@ -219,38 +219,24 @@ python src/gradient_check.py
 
 Expected output: All relative errors < 1e-7
 
-## 📖 Documentation
-
-Detailed documentation available in `docs/`:
-- Architecture decisions
-- Hyperparameter tuning process
-- Failure analysis and debugging
-- Complete mathematical derivations
-
-## 🤝 Contributing
+##  Contributing
 
 This is an educational project demonstrating neural network fundamentals. Suggestions and improvements welcome!
 
-## 📝 License
+##  License
 
 MIT License - feel free to use for educational purposes.
 
-## 👤 Author
+##  Author
 
 **Swastik Bhat**
 - Course: CSCI-4364/6364 – Machine Learning
 - Semester: Fall 2025
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - MNIST dataset: Yann LeCun et al.
 - Inspiration from CS231n (Stanford) and Deep Learning (Goodfellow et al.)
 - Mathematical foundations verified against academic literature
 
-## 📧 Contact
 
-For questions or collaboration, please open an issue or contact via GitHub.
-
----
-
-**⭐ If this project helped you understand neural networks, please star the repository!**
