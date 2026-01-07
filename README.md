@@ -37,7 +37,7 @@ Input (784) → Dense (1024, ReLU) → Output (10, Softmax)
 
 **Initialization:** He initialization (optimal for ReLU)
 
-## ⚙️ Training Configuration
+##  Training Configuration
 
 | Hyperparameter | Value |
 |----------------|-------|
@@ -200,7 +200,7 @@ Several extensions were prototyped but not fully implemented due to time constra
 
 See documentation for detailed implementation plans.
 
-## 📊 Comparison to Baselines
+##  Comparison to Baselines
 
 | Approach | Accuracy |
 |----------|----------|
