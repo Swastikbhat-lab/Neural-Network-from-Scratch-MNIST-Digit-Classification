@@ -141,7 +141,7 @@ The model was trained through 6 iterations to reach 94.25%:
 | 3 | 256 units, LR 0.01 | 88.9% | Capacity issue |
 | 4 | 512 units, LR 0.01 | 89.2% | Still limited |
 | 5 | 1024 units, LR 0.15 | 10% (failure) | LR too high |
-| **6** | **1024 units, LR 0.01** | **94.25%** ✅ | **Success!** |
+| **6** | **1024 units, LR 0.01** | **94.25%**  | **Success!** |
 
 ### Key Learnings
 - Larger networks need **smaller** learning rates
