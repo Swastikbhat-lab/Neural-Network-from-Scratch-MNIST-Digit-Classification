@@ -69,29 +69,6 @@ mnist_neural_network_project/
 └── README.md            # This file
 ```
 
-##  Quick Start
-
-### 1. Clone Repository
-```bash
-git clone https://github.com/YOUR_USERNAME/mnist-neural-network.git
-cd mnist-neural-network
-```
-
-### 2. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Train Model
-```bash
-python src/train.py
-```
-
-The script will:
-- Download MNIST dataset automatically
-- Train for 80 epochs
-- Save model and training history
-- Generate visualizations
 
 ### 4. Results
 Training outputs will be saved to `results/`:
@@ -159,26 +136,7 @@ The project generates several visualizations:
 4. **Per-Digit Accuracy**: Performance breakdown by digit
 5. **Performance Timeline**: All iterations compared
 
-##  Technical Highlights
-
-### Challenges Overcome
-
-**1. Gradient Bug (8 hours debugging)**
-- Issue: Double averaging in gradient computation
-- Solution: Numerical verification caught error
-- Impact: Fixed before any training attempts
-
-**2. NaN Loss Crisis (6 hours)**
-- Issue: Extra gradient scaling
-- Solution: Removed unnecessary normalization
-- Impact: Stable training achieved
-
-**3. Learning Rate Explosion (Iteration 5)**
-- Issue: LR 0.15 too high for 1024 units
-- Solution: Reduced to 0.01
-- Impact: 10% → 94% accuracy
-
-### Advanced Techniques
+## Some more details 
 
 - **Learning Rate Decay**: Decay at epochs 30, 50, 65
 - **Gradient Clipping**: Prevents exploding gradients
@@ -186,19 +144,6 @@ The project generates several visualizations:
 - **Momentum**: Accelerates convergence
 - **Weight Decay**: L2 regularization prevents overfitting
 
-##  Future Work
-
-Several extensions were prototyped but not fully implemented due to time constraints:
-
-| Extension | Status | Estimated Improvement |
-|-----------|--------|---------------------|
-| Second Hidden Layer | Prototype tested | +0.5% |
-| Dropout Regularization | Code complete | +0.3% |
-| Data Augmentation | 70% complete | +1.0% |
-| Adam Optimizer | Tested 20 epochs | +0.2% |
-| **Combined** | - | **+1.75% → 96.0%** |
-
-See documentation for detailed implementation plans.
 
 ##  Comparison to Baselines
 
