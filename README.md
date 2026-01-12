@@ -50,24 +50,7 @@ Input (784) → Dense (1024, ReLU) → Output (10, Softmax)
 | LR Decay | At epochs 30, 50, 65 |
 | Gradient Clipping | [-5, 5] |
 
-##  Project Structure
 
-```
-mnist_neural_network_project/
-├── src/
-│   ├── layers.py          # Dense layer, ReLU, Softmax
-│   ├── network.py         # Neural network class
-│   ├── optimizer.py       # SGD with momentum
-│   ├── loss.py           # Cross-entropy loss
-│   ├── data_utils.py     # MNIST data loading
-│   ├── gradient_check.py # Numerical gradient verification
-│   └── train.py          # Training script
-├── data/                 # MNIST data (auto-downloaded)
-├── results/              # Training outputs, models
-├── docs/                 # Documentation
-├── requirements.txt      # Dependencies
-└── README.md            # This file
-```
 
 
 ### 4. Results
