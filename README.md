@@ -1,7 +1,5 @@
 # Neural Network from Scratch: MNIST Digit Classification
 
-A fully-connected neural network implemented from scratch using only NumPy, achieving **94.25% test accuracy** on MNIST digit classification.
-
 ##  Project Overview
 
 This project implements a complete neural network from first principles without using any deep learning frameworks (no TensorFlow, PyTorch, or Keras). All components including forward propagation, backpropagation, and optimization are manually implemented and mathematically verified.
